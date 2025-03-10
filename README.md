@@ -1,19 +1,46 @@
-##Diploma Thesis – University of Ioannina##
-**Title:** *Physically Unclonable Functions in Current Mode: Analysis and Evaluation*  
-**Author:** *Christina Olympia Soldatou*  
-**Supervisor:** *Professor Yiorgos Tsiatouhas*  
+# **Physically Unclonable Functions in Current Mode: Analysis and Evaluation**  
+
+### **Diploma Thesis – University of Ioannina**  
+**Author:** Christina Olympia Soldatou  
+**Supervisor:** Professor Yiorgos Tsiatouhas  
 **Department:** Computer Science and Engineering, School of Engineering  
 **Date:** February 2025  
 
-### **Description**  
-This repository contains the **design, implementation, and evaluation** of a **Current-Mode Physically Unclonable Function (PUF)**, developed as part of my diploma thesis at the **University of Ioannina**.  
+## **Overview**  
+This repository contains the design, implementation, and evaluation of a **Current-Mode Physically Unclonable Function (PUF)**, developed as part of my diploma thesis at the **University of Ioannina**.  
 
-PUFs are an essential hardware security primitive that leverage manufacturing variations to generate unique cryptographic keys without requiring memory storage, making them resistant to cloning and attacks. Traditional **voltage-based PUFs** often suffer from reliability issues due to **temperature and supply voltage fluctuations**.  
+Physically Unclonable Functions (PUFs) are a fundamental hardware security technology that leverages manufacturing variations in integrated circuits to generate unique cryptographic keys. Unlike traditional security methods, PUFs do not require key storage in memory, making them resilient to cloning and data extraction attacks.  
 
-This thesis presents a **novel current-mode PUF architecture**, designed to enhance reliability against environmental variations. The circuit was implemented using **UMC's 90nm CMOS technology** and simulated in **Cadence Virtuoso & Spectre**. The design consists of an **array of 256 rows × 3 columns of PUF cells**, with **128 active rows**. Current-mode comparators are used to evaluate and compare the generated currents, identifying the "winning" column based on the strongest response.  
+This thesis presents a novel **current-mode PUF architecture** designed to improve **reliability against environmental fluctuations**, such as temperature and supply voltage variations. The circuit was implemented using **UMC's 90nm CMOS technology** and evaluated through **Monte Carlo simulations** in **Cadence Virtuoso & Spectre**.  
 
-To assess the circuit's performance, **5,000 Monte-Carlo simulations** were conducted for each environmental condition. The results demonstrate:  
-- **Reliability**: 96.81% under supply voltage variations  
-- **Reliability**: 98.04% under temperature fluctuations  
-- **Uniqueness**: 49.96%  
-- **Uniformity**: 48.57%  
+## **Key Features**  
+The proposed PUF operates based on **current differentials** rather than voltage, enhancing stability and reliability. The design consists of a **256×3 PUF array**, with **128 active rows** generating unique cryptographic keys. **Current sensing comparators** are used to determine the strongest response for authentication.  
+
+To validate performance, **5,000 Monte Carlo simulations** were conducted under different environmental conditions. The results demonstrate **96.81% reliability** under **supply voltage variations**, **98.04% reliability** under **temperature fluctuations**, **49.96% uniqueness**, and **48.57% uniformity**.  
+
+## **Repository Structure**  
+```
+📂 src/                  # Source code for circuit simulations  
+📂 data/                 # Monte Carlo simulation results  
+📂 docs/                 # Thesis documentation and references  
+📂 schematics/           # Circuit designs in Cadence Virtuoso  
+📜 README.md             # This file  
+📜 LICENSE               # Project license  
+```
+
+## **Installation & Usage**  
+Clone this repository:  
+```bash
+git clone https://github.com/your-username/Physically-Unclonable-Functions-in-Current-Mode.git  
+cd Physically-Unclonable-Functions-in-Current-Mode  
+```
+Run simulations in **Cadence Virtuoso** by loading the **PUF schematic** from the `schematics/` directory and executing **Spectre simulations** for performance evaluation. The **Monte Carlo simulation data** is stored in the `data/` directory and can be analyzed using **Python or MATLAB**.  
+
+## **Keywords**  
+Physically Unclonable Functions (PUFs), Current Mode Operation, Security, Reliability, Cryptographic Keys, IoT Devices, Hardware Security, Current Sensing Comparator, Monte Carlo Simulations, Process Variations.  
+
+## **License**  
+This project is licensed under the **MIT License**.  
+
+## **Contact & Contributions**  
+For any questions, contributions, or collaboration, feel free to open an issue or reach out.
