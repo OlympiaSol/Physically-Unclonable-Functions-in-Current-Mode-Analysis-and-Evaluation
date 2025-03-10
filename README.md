@@ -1,4 +1,4 @@
-###Diploma Thesis – University of Ioannina###  
+##Diploma Thesis – University of Ioannina##
 **Title:** *Physically Unclonable Functions in Current Mode: Analysis and Evaluation*  
 **Author:** *Christina Olympia Soldatou*  
 **Supervisor:** *Professor Yiorgos Tsiatouhas*  
