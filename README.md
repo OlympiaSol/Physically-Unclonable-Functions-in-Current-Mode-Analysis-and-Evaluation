@@ -1,4 +1,4 @@
-# **Physically Unclonable Functions in Current Mode: Analysis and Evaluation**  
+# **Development and Analysis of a Physically Unclonable Function Circuit**  
 
 ### **Diploma Thesis – University of Ioannina**  
 **Author:** Christina Olympia Soldatou  
